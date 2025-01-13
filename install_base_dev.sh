@@ -11,11 +11,16 @@ sudo apt get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plug
 
 sudo usermod -aG docker $USER
 
-# ZSH
+# OhMyZsh
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Java 21
+
+sudo apt install -y openjdk-21-jdk
 
 
 # Display results
 
 sudo docker run hello-world
+java --version
